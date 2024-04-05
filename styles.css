@@ -1,74 +1,145 @@
 body {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    height: 100vh;
-    font-size: 16px;
-    background-color: #f4f4f4;
-  }
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  height: 100vh;
+  font-size: 18px;
+  background-color: #f4f4f4;
+  color: rgb(69, 69, 69);
+}
 
 .layout {
-    display: flex;
-    border: 3px solid blue;
-    height: 100%;
+  display: flex;
+  /* border: 3px solid blue; */
+  height: 100%;
 
-  }
-
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0,0,0,0.5);
-    margin-top: 80px;
-  }
-
-  .logo {
-    height: 100px;
-  }
-
-  @font-face {
-    font-family: norse;
-    src: url("./fonts/Norse-Bold.otf");
-  }
-
-  .title {
-    font-family: norse;
-    font-size: 64px;
-    
-  }
-
-  .credit {
-    display: flex;
-    background: rgba(0,0,0,0.25);
-    justify-content: center;
-    font-size: 10px;
-  }
-
-  .credit > a {
-    color: white;
-  }
-
-  .credit a:visited{
-    color: white;
-  }
+}
 
 
-  .left {
-    display: flex;
-    flex-direction: column;
-    background-image: url("./images/dumbbells.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 1px solid red;
-    color: white;
-    justify-content: space-between;
-    width: 40%;
-  }
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+  margin-top: 125px;
+}
 
-  .right {
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-  }
+
+.logo {
+  height: 100px;
+}
+
+@font-face {
+  font-family: norse;
+  src: url("./fonts/Norse-Bold.otf");
+}
+
+.title {
+  font-family: norse;
+  font-size: 64px;
+  
+}
+
+.credit {
+  display: flex;
+  background: rgba(0,0,0,0.25);
+  justify-content: center;
+  font-size: 12px;
+}
+
+.credit > a {
+  color: white;
+}
+
+.credit a:visited{
+  color: white;
+}
+
+
+.left {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./images/dumbbells.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* border: 1px solid red; */
+  color: white;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.right {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40em;
+}
+
+.desc {
+  font-weight: bold;
+  margin: 10px 30px 10px;
+}
+
+#form-title {
+  margin: 0px
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: 10px; 
+  /* border: 1px solid red; */
+  margin: 20px 0px;
+}
+
+fieldset {
+  background-color: white;
+  margin: 30px;
+  border: none;
+  box-shadow: 0px 4px 8px grey;
+  padding: 20px 0px 10px 30px;
+
+}
+
+.submit-button {
+  margin: 0px 30px 10px;
+  background-color: #202020;
+  color: white;
+  padding: 14px 40px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  font-size: 12px;
+  transition-duration: 0.4s;
+}
+
+.submit-button:hover {
+  background-color: rgb(0, 0, 0);
+  cursor:pointer;
+}
+
+.login {
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  /* border: 1px solid red; */
+}
+
+input {
+  width: 225px;
+  height: 25px;
+  margin-right: 40px;
+  border: 1px solid rgb(196, 196, 196);
+}
+
+label input {
+}
+
+/* 
+passwords invalid if not matching

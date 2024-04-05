@@ -29,48 +29,54 @@
 
 
     <div class="right">
-      <div> This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</div>
+      <div class="desc"> This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</div>
 
-      <div> Sign up now and start your journey to greatness. </div>
+      <div class="desc"> Sign up <i>now</i> and start your journey to greatness. </div>
 
-      <div> You know you want to. </div>
+      <div class="desc"> You <i>know</i> you want to. </div>
       
       <form action="" method="post"></form>
         <fieldset>
-          <div> Let's do this! </div>
+          <div class="desc" id="form-title"> Let's do this! </div>
 
-          <div>
-            <label for="fname">FIRST NAME</label>
-            <input id="fname" name="fname" type="text" required />
+          
+          <div class="form-row">
+            <div>
+              <label for="fname">FIRST NAME</label>
+              <input id="fname" name="fname" type="text" required />
+            </div>
+            <div>
+              <label for="lname">LAST NAME </label>
+              <input id="lname" name="lname" type="text" required />
+            </div>
           </div>
 
-          <div>
-            <label for="lname">LAST NAME </label>
-            <input id="lname" name="lname" type="text" required />
+          <div class="form-row">
+            <div>
+              <label for="email">EMAIL</label>
+              <input id="email" name="email" type="email" />
+            </div>
+            <div>
+              <label for="tel">PHONE NUMBER</label>
+              <input id="tel" name="tel" type="tel"/>
+            </div>
+  
           </div>
 
-          <div>
-            <label for="email">EMAIL</label>
-            <input id="email" name="email" type="email" />
+          <div class="form-row">
+            <div>
+              <label for="pass">PASSWORD</label>
+              <input id="pass" name="pass" type="password" required />
+            </div>
+            <div>
+              <label for="cpass">CONFIRM PASSWORD</label>
+              <input id="pass" name="pass" type="password" required />
+            </div>
           </div>
-
-          <div>
-            <label for="tel">PHONE NUMBER</label>
-            <input id="tel" name="tel" type="tel"/>
-          </div>
-
-          <div>
-            <label for="pass">PASSWORD </label>
-            <input id="fname" name="fname" type="text" required />
-          </div>
-
-          <div>
-            <label for="fname">FIRST NAME</label>
-            <input id="fname" name="fname" type="text" required />
-          </div>
-
-          <div><button>CREATE ACCOUNT</button></div>
         </fieldset>
+        <div>
+          <button class="submit-button" type="submit">CREATE ACCOUNT</button>
+        </div>
       </form>
 
       <div class="login">
